@@ -32,7 +32,7 @@ if($anchor.parent().hasClass("selected")){
 $("#menu").append($button); 
 
 // bind change listener to the select
-$button.click(function(){
+ $button.click(function(){
   //go to select's location
   window.location = $select.val();
 });
