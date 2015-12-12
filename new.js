@@ -7,7 +7,7 @@ var $select = $("<select></select>");
 $("#menu").append($select);
 
 //cycle over menu links
-$("#menu a").each(function(){
+ $("#menu a").each(function(){
   var $anchor = $(this);
   
   //create an option
@@ -17,7 +17,7 @@ $("#menu a").each(function(){
 //deal with selected options depending on current page
 if($anchor.parent().hasClass("selected")){
   $option.prop("selected", true);
-}
+};
   //options value is href of link
   $option.val($anchor.attr("href"));
   //options text is the text of link
@@ -41,6 +41,12 @@ $("#menu").append($button);
 //bind change listener to the select
 $select.change(function(){
 //go to selected location
-  window.location = $select.val()
+  window.location = $select.val();
 });
+
+
+
+
+
+
 
